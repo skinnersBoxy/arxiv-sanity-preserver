@@ -33,7 +33,7 @@ if __name__ == "__main__":
     db = pickle.load(open(Config.db_path, 'rb'))
   except Exception as e:
     print('error loading existing database:')
-    orint(e)
+    print(e)
     print('starting from an empty database')
     db = {}
 
@@ -47,9 +47,7 @@ if __name__ == "__main__":
     query = 'set=%s&metadataPrefix=arXivRaw' % (category, )
     while (first_in_category or resumption_token is not None):
       with urllib.request.urlopen(base_url + query) as url:
-        print(url.geturl())
         response = url.read()
-        print(response)
 
       root = ElementTree.fromstring(response)
       elements = root[2]
@@ -67,6 +65,8 @@ if __name__ == "__main__":
         rawid = elements[1][0][0].text
         j['_rawid'] = rawid
         versions = element.findall(".//{http://arxiv.org/OAI/arXivRaw/}version")
+        if (len(versions) == 0):
+          break;
         max_version = max(map(lambda x: int(x.attrib['version'][1:]), versions))
         j['_version'] = 'v' + str(max_version)
 
