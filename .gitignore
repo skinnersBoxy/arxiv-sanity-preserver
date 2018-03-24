@@ -3,10 +3,10 @@ arxiv_sanity_preserver.egg-info/
 tmp/
 pdf/
 txt/
-arxiv_sanity_preserver/static/thumbs/
+arxiv_sanity_preserver/server/static/thumbs/
 *.p
 *.pyc
-as.db
+**/as.db
 secret_key.txt
 env/
 data
