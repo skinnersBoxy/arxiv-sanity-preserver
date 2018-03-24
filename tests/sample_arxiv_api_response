@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3Dcat%3Acs.CV%20OR%20cat%3Acs.AI%20OR%20cat%3Acs.LG%20OR%20cat%3Acs.CL%20OR%20cat%3Acs.NE%20OR%20cat%3Astat.ML%26id_list%3D%26start%3D0%26max_results%3D1" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=cat:cs.CV OR cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE OR cat:stat.ML&amp;id_list=&amp;start=0&amp;max_results=1</title>
+  <id>http://arxiv.org/api/uygQ5c7TaD0mCv94DSSJmai83GA</id>
+  <updated>2018-03-24T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">56518</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/1803.08496v1</id>
+    <updated>2018-03-22T17:59:19Z</updated>
+    <published>2018-03-22T17:59:19Z</published>
+    <title>Generalized Scene Reconstruction</title>
+    <summary>  A new passive approach called Generalized Scene Reconstruction (GSR) enables
+"generalized scenes" to be effectively reconstructed. Generalized scenes are
+defined to be "boundless" spaces that include non-Lambertian, partially
+transmissive, textureless and finely-structured matter. A new data structure
+called a plenoptic octree is introduced to enable efficient (database-like)
+light and matter field reconstruction in devices such as mobile phones,
+augmented reality (AR) glasses and drones. To satisfy threshold requirements
+for GSR accuracy, scenes are represented as systems of partially polarized
+light, radiometrically interacting with matter. To demonstrate GSR, a prototype
+imaging polarimeter is used to reconstruct (in generalized light fields) highly
+reflective, hail-damaged automobile body panels. Follow-on GSR experiments are
+described.
+</summary>
+    <author>
+      <name>John K. Leffingwell</name>
+    </author>
+    <author>
+      <name>Donald J. Meagher</name>
+    </author>
+    <author>
+      <name>Khan W. Mahmud</name>
+    </author>
+    <author>
+      <name>Scott Ackerson</name>
+    </author>
+    <link href="http://arxiv.org/abs/1803.08496v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/1803.08496v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>
