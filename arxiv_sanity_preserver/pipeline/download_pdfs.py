@@ -5,7 +5,7 @@ import shutil
 import random
 from urllib.request import urlopen
 
-from utils import Config
+from arxiv_sanity_preserver.pipeline.utils import Config
 
 timeout_secs = 10  # after this many seconds we give up on a paper
 if not os.path.exists(Config.pdf_dir): os.makedirs(Config.pdf_dir)

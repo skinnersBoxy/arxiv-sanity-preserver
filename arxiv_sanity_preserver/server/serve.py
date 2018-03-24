@@ -15,7 +15,7 @@ from flask_limiter import Limiter
 from werkzeug import check_password_hash, generate_password_hash
 import pymongo
 
-from utils import safe_pickle_dump, strip_version, isvalidid, Config
+from arxiv_sanity_preserver.pipeline.utils import safe_pickle_dump, strip_version, isvalidid, Config
 
 # various globals
 # -----------------------------------------------------------------------------

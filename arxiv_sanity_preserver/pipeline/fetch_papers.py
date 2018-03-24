@@ -12,7 +12,7 @@ import argparse
 import urllib.request
 import feedparser
 
-from utils import Config, safe_pickle_dump
+from arxiv_sanity_preserver.pipeline.utils import Config, safe_pickle_dump
 
 
 def encode_feedparser_dict(d):

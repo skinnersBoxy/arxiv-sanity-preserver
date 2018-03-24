@@ -1,8 +1,9 @@
 .idea/
+arxiv_sanity_preserver.egg-info/
 tmp/
 pdf/
 txt/
-static/thumbs/
+arxiv_sanity_preserver/static/thumbs/
 *.p
 *.pyc
 as.db

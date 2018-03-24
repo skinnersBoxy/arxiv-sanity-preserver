@@ -15,7 +15,7 @@ from dateutil import parser
 import twitter  # pip install python-twitter
 import pymongo
 
-from utils import Config
+from arxiv_sanity_preserver.pipeline.utils import Config
 
 # settings
 # -----------------------------------------------------------------------------

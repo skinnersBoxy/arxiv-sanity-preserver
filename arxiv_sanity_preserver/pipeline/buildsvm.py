@@ -7,7 +7,7 @@ import numpy as np
 from sklearn import svm
 from sqlite3 import dbapi2 as sqlite3
 # local imports
-from utils import safe_pickle_dump, strip_version, Config
+from arxiv_sanity_preserver.pipeline.utils import safe_pickle_dump, strip_version, Config
 
 num_recommendations = 1000  # papers to recommend per user
 # -----------------------------------------------------------------------------

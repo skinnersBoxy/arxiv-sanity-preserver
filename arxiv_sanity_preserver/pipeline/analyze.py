@@ -9,7 +9,7 @@ from random import shuffle, seed
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from utils import Config, safe_pickle_dump
+from arxiv_sanity_preserver.pipeline.utils import Config, safe_pickle_dump
 
 seed(1337)
 max_train = 5000  # max number of tfidf training documents (chosen randomly), for memory efficiency

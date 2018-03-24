@@ -2,13 +2,13 @@
 Use imagemagick to convert all pfds to a sequence of thumbnail images
 requires: sudo apt-get install imagemagick
 """
-
+import sys
 import os
 import time
 import shutil
 from subprocess import Popen
 
-from utils import Config
+from arxiv_sanity_preserver.pipeline.utils import Config
 
 # make sure imagemagick is installed
 if not shutil.which('convert'):  # shutil.which needs Python 3.3+
