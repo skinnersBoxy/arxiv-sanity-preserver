@@ -2,13 +2,13 @@
 Use imagemagick to convert all pfds to a sequence of thumbnail images
 requires: sudo apt-get install imagemagick
 """
-
+import sys
 import os
 import time
 import shutil
 from subprocess import Popen
 
-from utils import Config
+from arxiv_sanity_preserver.pipeline.utils import Config
 
 # make sure imagemagick is installed
 if not shutil.which('convert'):  # shutil.which needs Python 3.3+
@@ -75,7 +75,7 @@ for i, p in enumerate(pdf_files):
 
     if not os.path.isfile(os.path.join(Config.tmp_dir, 'thumb-0.png')):
         # failed to render pdf, replace with missing image
-        missing_thumb_path = os.path.join('static', 'missing.jpg')
+        missing_thumb_path = os.path.join('arxiv_sanity_preserver/server/static', 'missing.jpg')
         os.system('cp %s %s' % (missing_thumb_path, thumb_path))
         print("could not render pdf, creating a missing image placeholder")
     else:

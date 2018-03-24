@@ -13,7 +13,7 @@ import pickle
 import dateutil.parser
 
 from sqlite3 import dbapi2 as sqlite3
-from utils import safe_pickle_dump, Config
+from arxiv_sanity_preserver.pipeline.utils import safe_pickle_dump, Config
 
 sqldb = sqlite3.connect(Config.database_path)
 sqldb.row_factory = sqlite3.Row  # to return dicts rather than tuples

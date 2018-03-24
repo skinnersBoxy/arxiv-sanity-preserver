@@ -11,7 +11,7 @@ import time
 import shutil
 import pickle
 
-from utils import Config
+from arxiv_sanity_preserver.pipeline.utils import Config
 
 # make sure pdftotext is installed
 if not shutil.which('pdftotext'):  # needs Python 3.3+
